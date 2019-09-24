@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style></style>
+</head>
+<body>
+    <input type="date" id="d">
+    <script>
+        var d =document.getElementById('d');
+        var nw =confirm('女王点击确定');
+        
+        // console.log(nw);
+        d.oninput = function(){
+            var 日期判断 = (d.value == '2019-03-08');
+            //alert(d.value);
+           if(日期判断&&nw){
+                alert('五折');
+           }else{
+               alert('不打折')
+           }
+        }
+    </script>
+</body>
+</html>
